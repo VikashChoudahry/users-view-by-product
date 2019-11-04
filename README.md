@@ -50,4 +50,4 @@ Just run npm install and then run npm run dev to initialize nodemon given env co
 2. /GET?isUnique
     Specify, if you need unique users who visited or all users.
 
-Note: Postman collection has been shared.
+Note: Postman collection has been added (UsersViewsByProduct.postman_collection.json).
