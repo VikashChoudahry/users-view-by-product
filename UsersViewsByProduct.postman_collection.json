@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "fb3e64bd-c22d-4ad8-900c-ff36dddd07ae",
+		"name": "UsersViewsByProduct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add View Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"UserID\":\"vikash.choudhary.1\",\n\t\"viewDate\":\"2019-11-04T15:59:14.442Z\",\n\t\"productID\":\"prd#3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/views",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"views"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get View Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productID\":\"prd#3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/views?isUnique=true&startAt=2019-11-04 10:48:14.442Z",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"views"
+					],
+					"query": [
+						{
+							"key": "isUnique",
+							"value": "true"
+						},
+						{
+							"key": "startAt",
+							"value": "2019-11-04 10:48:14.442Z"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
