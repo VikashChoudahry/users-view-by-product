@@ -42,7 +42,7 @@ Make sure that you have latest env setup, if there is any changes in env.example
 
 Just run npm install and then run npm run dev to initialize nodemon given env configurations.
 
-## API
+## API Endpoints
 
 1. /GET ?startAt=DATE1&endAt=DATE2
     OPTIONAL query parameters to specify start and end dates.
